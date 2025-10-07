@@ -22,10 +22,10 @@ public abstract class MemberAbs implements IMember {
     
     public void redeemPoints(int points) {
         if (points > this.points) {
-            System.out.println(name + " does not have enough points to redeem.");
+            System.out.println(name + " tidak mempunyai cukup points untuk di-redeem.");
         } else {
             this.points -= points;
-            System.out.println(name + " redeemed " + points + " points. Remaining: " + this.points);
+            System.out.println(name + " me-redeem " + points + " points. Sisa point saat ini: " + this.points);
         }
     }
 
@@ -42,7 +42,8 @@ public abstract class MemberAbs implements IMember {
     }
     
     public String toString() {
-    	return "Nama Member[" + name + "], Points[" + points + "], Type[" + getType() + "]";
+    	return "Nama Member[" + name + "], Points[" + points + "], Tipe Member[" + getType() + "]";
     }
 }
+
 
